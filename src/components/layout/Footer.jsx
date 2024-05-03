@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer-section">
       <div className="container footer-content">
-        <div className="footer-content-inner flex flex-col lg:flex-row gap-[100px]  justify-between">
+        <div className="footer-content-inner flex flex-col lg:flex-row sm:gap-[100px] gap-10  justify-between">
           <div className="description-block max-w-[268px]">
             <div className="footer-logo">
               <img src="/assets/image/logo.svg" alt="" />
@@ -14,7 +14,7 @@ const Footer = () => {
               fusce.
             </p>
           </div>
-          <div className="flex justify-between w-full max-w-[816px]">
+          <div className="flex sm:flex-row flex-col justify-between gap-10 w-full max-w-[816px]">
             <div className="footer-list w-full max-w-[132px]">
               <h3 className="footer-title text-xl leading-6 font-medium">Company</h3>
               <ul className="list">

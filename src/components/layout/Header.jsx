@@ -82,12 +82,16 @@ const Header = () => {
                             </li>
                         </ul>
                     </nav>
-                    <div className="w-1/5 flex justify-end">
+                    <div className="md:w-1/5 flex items-center gap-5">
+                        <Link href="/">
+                        Login
+                        </Link>
                         <Button
                             className="md:block hidden"
+                            size="sm"
                             href='/templates'
                         >
-                            Browse Templates
+                            Register
                         </Button>
                         <div className='navbar-hamburger block md:hidden'>
                             <Hamburger

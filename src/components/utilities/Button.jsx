@@ -11,7 +11,8 @@ const buttonVariants = cva(
                 default: "bg-white text-black hover:bg-white/90"
             },
             size: {
-                default: "h-[60px] px-[30px] py-4 text-[18px]"
+                default: "sm:h-[60px] h-[48px] sm:px-[30px] px-[24px] sm:py-4 py-3 text-[18px]",
+                sm: "h-[50px] px-[26px] py-[10px] text-[18px]"
             }
         },
         defaultVariants: {

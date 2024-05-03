@@ -17,36 +17,73 @@ const marqueeVariants = {
 };
 
 const Testimonial = () => {
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 5000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 0,
-        // centerMode: true,
-        cssEase: "linear",
-        infinite: true,
-        initialSlide: 1,
-        buttons: false,
-    };
+
+    const testimonialData = [
+        {
+            name: "Sarah Connor",
+            text: "Mi auctor sagittis habitasse elit. In orci lorem sodales sem enim fusce. At sem amet lacus eu aliquet venenatis tell bibendum sapien."
+        },
+        {
+            name: "",
+            text: "Mi auctor sagittis habitasse elit. In orci lorem sodales sem enim fusce. At sem amet lacus eu aliquet venenatis tell bibendum sapien."
+        },
+        {
+            name: "",
+            text: "Mi auctor sagittis habitasse elit. In orci lorem sodales sem enim fusce. At sem amet lacus eu aliquet venenatis tell bibendum sapien."
+        },
+        {
+            name: "",
+            text: "Mi auctor sagittis habitasse elit. In orci lorem sodales sem enim fusce. At sem amet lacus eu aliquet venenatis tell bibendum sapien."
+        },
+        {
+            name: "",
+            text: "Mi auctor sagittis habitasse elit. In orci lorem sodales sem enim fusce. At sem amet lacus eu aliquet venenatis tell bibendum sapien."
+        },
+        {
+            name: "",
+            text: "Mi auctor sagittis habitasse elit. In orci lorem sodales sem enim fusce. At sem amet lacus eu aliquet venenatis tell bibendum sapien."
+        },
+        {
+            name: "",
+            text: "Mi auctor sagittis habitasse elit. In orci lorem sodales sem enim fusce. At sem amet lacus eu aliquet venenatis tell bibendum sapien."
+        },
+        {
+            name: "",
+            text: "Mi auctor sagittis habitasse elit. In orci lorem sodales sem enim fusce. At sem amet lacus eu aliquet venenatis tell bibendum sapien."
+        },
+        {
+            name: "",
+            text: "Mi auctor sagittis habitasse elit. In orci lorem sodales sem enim fusce. At sem amet lacus eu aliquet venenatis tell bibendum sapien."
+        },
+        {
+            name: "",
+            text: "Mi auctor sagittis habitasse elit. In orci lorem sodales sem enim fusce. At sem amet lacus eu aliquet venenatis tell bibendum sapien."
+        },
+        {
+            name: "",
+            text: "Mi auctor sagittis habitasse elit. In orci lorem sodales sem enim fusce. At sem amet lacus eu aliquet venenatis tell bibendum sapien."
+        },
+        {
+            name: "",
+            text: "Mi auctor sagittis habitasse elit. In orci lorem sodales sem enim fusce. At sem amet lacus eu aliquet venenatis tell bibendum sapien."
+        },
+    ]
 
     return (
         <section className="testimonial-section">
-            <div className="container flex flex-col items-center justify-center gap-[76px]">
+            <div className="container  flex flex-col items-center justify-center md:gap-y-[76px] sm:gap-y-12 gap-y-8">
                 <div className="">
-                    <h2 className='text-[80px] leading-[85px] text-center font-medium tracking-[-.07em] pb-1 diamond-gradient'>
+                    <h2 className='lg:text-[80px] sm:text-[60px] text-4xl lg:leading-[85px] leading-tight text-center font-medium tracking-[-.07em] pb-1 diamond-gradient'>
                         What others say about us
                     </h2>
                 </div>
-                <div className="flex gap-4">
+                <div class="flex gap-5 justify-center  w-full">
                     <TestimonialCard />
                     <TestimonialCard />
                     <TestimonialCard />
                 </div>
             </div>
+
         </section>
     );
 };

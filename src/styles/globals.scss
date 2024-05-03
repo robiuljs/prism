@@ -34,55 +34,49 @@ button {
 /* --- HEADER --- */
 
 .navbar {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  position: relative;
 
-    &-inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand {
+    width: 20%;
+  }
+
+  &-nav {
+
+    @media (max-width: 768px) {
+      position: absolute;
+      background-color: black;
+      width: 100%;
+      height: calc(100vh - 100px);
+      z-index: 1000;
     }
+  }
 
-    .brand {
-        width: 20%;
+  &-button-group {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+
+    .btn {
+      width: fit-content;
     }
-
-    &-nav {
-
-        @media (max-width: 768px) {
-            position: absolute;
-            background-color: black;
-            width: 100%;
-            height: calc(100vh - 100px);
-            z-index: 1000;
-            top: 100px;
-        }
-    }
-
-    &-button-group {
-        width: 20%;
-        display: flex;
-        justify-content: flex-end;
-
-        .btn {
-            width: fit-content;
-        }
-    }
+  }
 }
 
-
-
 .hero-overlay {
-  position: absolute;
-  height: 365px;
   width: 97%;
   bottom: -8%;
   left: 50%;
   background: linear-gradient(180deg, #24262B, #040405);
   transform: translateX(-50%);
   z-index: -1;
-  border-radius: 8px;
 }
 
 .pricing-section {
@@ -105,7 +99,6 @@ button {
 }
 
 .pricing-card {
-  width: 100%;
   max-width: 372px;
   background-image: url(/assets/image/pricing-bg.svg);
   background-repeat: no-repeat;
@@ -212,7 +205,6 @@ button {
   background-position: top;
   background-size: cover;
   padding-top: 70px;
-  margin-top: 100px;
   border-top: 1px solid #9aa19e35;
 }
 
@@ -223,6 +215,7 @@ button {
 
   .footer-content-inner {
     color: white;
+
     .description-block {
       width: 100%;
 
@@ -269,6 +262,11 @@ button {
   grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 14px;
   grid-row-gap: 14px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .feature-grid-1 {

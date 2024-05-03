@@ -1,5 +1,8 @@
 
-const TestimonialCard = () => {
+const TestimonialCard = ({
+  name,
+  text
+}) => {
     return (
       <div className="testimonial-card">
         <div className="testimonial-card__head">
@@ -26,8 +29,7 @@ const TestimonialCard = () => {
         </div>
         <div className="testimonial-card__body">
           <p>
-            Mi auctor sagittis habitasse elit. In orci lorem sodales sem enim
-            fusce. At sem amet lacus eu aliquet venenatis tell bibendum sapien.
+          Mi auctor sagittis habitasse elit. In orci lorem sodales sem enim fusce. At sem amet lacus eu aliquet venenatis tell bibendum sapien.
           </p>
         </div>
         <div className="testimonial-card__footer">
@@ -36,7 +38,7 @@ const TestimonialCard = () => {
               <img src="/assets/image/user-profile.png" alt="" />
             </div>
             <div className="user-details">
-              <h4 className="user-name">Sarah John</h4>
+              <h4 className="user-name">Sarah Connor</h4>
               <h4 className="user-position">CEO of Own Multi Company</h4>
             </div>
           </div>
