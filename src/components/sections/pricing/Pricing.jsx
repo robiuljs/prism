@@ -1,79 +1,22 @@
+import PricingCard from "@/components/cards/PricingCard";
+
 const Pricing = () => {
     return (
-      <section className="pricing-section">
-        <div className="pricing-content">
-          <div className="title-block">
-            <h2 className="section-title">know Our Pricing</h2>
-          </div>
-          <div className="pricing-card-wrapper">
-            <div className="pricing-card">
-              <div className="pricing-card__head">
-                <h3 className="pricing-card__title">Plastic</h3>
-                <h3 className="pricing-card__price">$380</h3>
-                <div className="pricing-card__image">
-                  <img src="/assets/image/white-shadow.svg" alt="" />
+        <section className="pricing-section">
+            <div className="container flex flex-col justify-center gap-y-[76px]">
+                <div className="">
+                    <h2 className='text-[80px] leading-[85px] text-center font-medium tracking-[-.07em] pb-1 diamond-gradient'>
+                        know Our Pricing
+                    </h2>
                 </div>
-              </div>
-              <div className="pricing-card__body">
-                <ul className="pricing-card__list">
-                  <li>Multi-Currency Account</li>
-                  <li>High spending limits</li>
-                  <li>Plastic card</li>
-                  <li>24/7 live support</li>
-                  <li className="disabled">Metal card</li>
-                  <li className="disabled">Free express shipping</li>
-                  <li className="disabled">anonymous</li>
-                </ul>
-                <button className="btn btn-primary">REGISTER</button>
-              </div>
-            </div>
-            <div className="pricing-card">
-              <div className="pricing-card__head">
-                <h3 className="pricing-card__title">Plastic</h3>
-                <h3 className="pricing-card__price">$380</h3>
-                <div className="pricing-card__image">
-                  <img src="/assets/image/white-shadow.svg" alt="" />
+                <div className="pricing-card-wrapper flex justify-center gap-10">
+                    <PricingCard/>
+                    <PricingCard/>
+                    <PricingCard/>
                 </div>
-              </div>
-              <div className="pricing-card__body">
-                <ul className="pricing-card__list">
-                  <li>Multi-Currency Account</li>
-                  <li>High spending limits</li>
-                  <li>Plastic card</li>
-                  <li>24/7 live support</li>
-                  <li className="disabled">Metal card</li>
-                  <li className="disabled">Free express shipping</li>
-                  <li className="disabled">anonymous</li>
-                </ul>
-                <button className="btn btn-primary">REGISTER</button>
-              </div>
             </div>
-            <div className="pricing-card">
-              <div className="pricing-card__head">
-                <h3 className="pricing-card__title">Plastic</h3>
-                <h3 className="pricing-card__price">$380</h3>
-                <div className="pricing-card__image">
-                  <img src="/assets/image/white-shadow.svg" alt="" />
-                </div>
-              </div>
-              <div className="pricing-card__body">
-                <ul className="pricing-card__list">
-                  <li>Multi-Currency Account</li>
-                  <li>High spending limits</li>
-                  <li>Plastic card</li>
-                  <li>24/7 live support</li>
-                  <li className="disabled">Metal card</li>
-                  <li className="disabled">Free express shipping</li>
-                  <li className="disabled">anonymous</li>
-                </ul>
-                <button className="btn btn-primary">REGISTER</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     );
-  };
-  
-  export default Pricing;
-  
+};
+
+export default Pricing;

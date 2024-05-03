@@ -1,12 +1,6 @@
 "use client";
 
-import TestimonialCard from "@/components/ui/cards/TestimonialCard";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "../../../marquee/marquee.css";
-import { motion } from "framer-motion";
-import Marquee from "react-fast-marquee";
+import TestimonialCard from "@/components/cards/TestimonialCard";
 
 const marqueeVariants = {
     animate: {
@@ -41,14 +35,17 @@ const Testimonial = () => {
 
     return (
         <section className="testimonial-section">
-            <div className="testimonial-content">
-                <div className="title-block">
-                    <h2 className="section-title">What others say about us</h2>
+            <div className="container flex flex-col items-center justify-center gap-[76px]">
+                <div className="">
+                    <h2 className='text-[80px] leading-[85px] text-center font-medium tracking-[-.07em] pb-1 diamond-gradient'>
+                        What others say about us
+                    </h2>
                 </div>
-                <TestimonialCard />
-                <TestimonialCard />
-                <TestimonialCard />
-                <TestimonialCard />
+                <div className="flex gap-4">
+                    <TestimonialCard />
+                    <TestimonialCard />
+                    <TestimonialCard />
+                </div>
             </div>
         </section>
     );

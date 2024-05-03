@@ -4,18 +4,20 @@ import Link from 'next/link'
 import React from 'react'
 
 const buttonVariants = cva(
-    "",
+    "inline-flex items-center justify-center gap-x-4 whitespace-nowrap rounded-full font-bold",
     {
         variants: {
             variant: {
-                default: "bg-white text-black hover:bg-slate-900"
+                default: "bg-white text-black hover:bg-white/90"
             },
             size: {
-                default: "h-10 px-4 py-2"
+                default: "h-[60px] px-[30px] py-4 text-[18px]"
             }
         },
-        defaultVariants: "default",
-        size: "default"
+        defaultVariants: {
+            variant: "default",
+            size: "default"
+        }
     }
 )
 
@@ -29,7 +31,9 @@ const Button = ({
     return (
         <>
             {
-                href ? <Link href={href} className={cnMerge({ className, variant, size })}>{children}</Link> : <button className={cnMerge({ className, variant, size })}>{children}</button>
+                href
+                    ? <Link href={href} className={cnMerge(buttonVariants({ className, variant, size }))}>{children}</Link>
+                    : <button className={cnMerge(buttonVariants({ className, variant, size }))}>{children}</button>
             }
         </>
     )
