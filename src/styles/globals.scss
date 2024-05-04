@@ -36,7 +36,6 @@ button {
 .navbar {
   padding-top: 24px;
   padding-bottom: 24px;
-  position: relative;
 
   &-inner {
     display: flex;
@@ -287,4 +286,7 @@ button {
 
 .feature-grid-5 {
   grid-area: 4 / 2 / 7 / 3;
+}
+
+.line {
 }

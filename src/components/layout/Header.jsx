@@ -43,8 +43,8 @@ const Header = () => {
     }, []);
 
     return (
-        <header className='navbar bg-transparent absolute top-0 w-full py-5 z-[9999]'>
-            <div className="container">
+        <header className='bg-transparent absolute top-0 w-full py-5 z-[9999]'>
+            <div className="container relative">
                 <div className='flex justify-between items-center'>
                     <div className="w-1/5">
                         <Link href="/">
