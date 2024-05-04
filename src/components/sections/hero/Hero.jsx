@@ -27,7 +27,7 @@ const Hero = () => {
                         }}
                         transition={{
                             easings: easeInOut,
-                            duration: .3,
+                            duration: .5,
                             delay: .3,
                             mass: 1.2,
                             damping: 60
@@ -68,7 +68,7 @@ const Hero = () => {
                         }}
                         transition={{
                             easings: easeInOut,
-                            duration: .3,
+                            duration: .5,
                             delay: .3,
                             mass: 1.2,
                             damping: 60
