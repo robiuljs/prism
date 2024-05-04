@@ -179,7 +179,7 @@ const Features = () => {
                             duration: 1,
                             mass: 1.2,
                             damping: 60,
-                            delay: .2,
+                            delay: .4,
                         }}
                         className="w-full flex sm:flex-row flex-col-reverse gap-5 items-center justify-between bg-gradient-to-t from-white/5 to-black/90 rounded-[40px] lg:px-[65px] px-6  md:py-0 py-5">
                         <h3 className="content-card__title md:text-[35px] text-2xl md:leading-[40px] leading-tight font-bold sm:max-w-[516px] sm:text-left text-center diamond-gradient">

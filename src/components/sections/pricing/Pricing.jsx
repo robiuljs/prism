@@ -14,10 +14,10 @@ const Pricing = () => {
                 <div className="">
                     <motion.h2
                         initial={{
-                             opacity: 0
+                            opacity: 0
                         }}
                         whileInView={{
-                             opacity: 1
+                            opacity: 1
                         }}
                         viewport={{
                             once: true
@@ -32,17 +32,28 @@ const Pricing = () => {
                         know Our Pricing
                     </motion.h2>
                 </div>
-                <div className="pricing-card-wrapper flex flex-wrap justify-center gap-10">
+                <motion.div
+                    initial={{
+                        y: 30,
+                        opacity: 0
+                    }}
+                    whileInView={{
+                        y: 0,
+                        opacity: 1
+                    }}
+                    viewport={{
+                        once: true
+                    }}
+                    transition={{
+                        easings: easeInOut,
+                        duration: .3,
+                        delay: .5,
+                        mass: 1.2,
+                        damping: 50
+                    }}
+                    className="pricing-card-wrapper flex flex-wrap justify-center gap-10">
                     <motion.div
-                        initial={{
-                            y: 100, opacity: 0
-                        }}
-                        whileInView={{
-                            y: 0, opacity: 1
-                        }}
-                        viewport={{
-                            once: true
-                        }}
+
                         className="pricing-card lg:w-[30%] sm:w-[47%] w-auto">
                         <div className="pricing-card__head">
                             <h3 className="pricing-card__title text-[24px] leading-[40px]">Plastic</h3>
@@ -67,18 +78,6 @@ const Pricing = () => {
                         </div>
                     </motion.div>
                     <motion.div
-                        initial={{
-                            y: 100, opacity: 0
-                        }}
-                        whileInView={{
-                            y: 0, opacity: 1
-                        }}
-                        viewport={{
-                            once: true
-                        }}
-                        transition={{
-                            delay: .2
-                        }}
                         className="pricing-card lg:w-[30%] sm:w-[47%] w-auto">
                         <div className="pricing-card__head">
                             <h3 className="pricing-card__title text-[24px] leading-[40px]">Metal</h3>
@@ -103,18 +102,6 @@ const Pricing = () => {
                         </div>
                     </motion.div>
                     <motion.div
-                        initial={{
-                            y: 100, opacity: 0
-                        }}
-                        whileInView={{
-                            y: 0, opacity: 1
-                        }}
-                        viewport={{
-                            once: true
-                        }}
-                        transition={{
-                            delay: .4
-                        }}
                         className="pricing-card lg:w-[30%] sm:w-[47%] w-auto">
                         <div className="pricing-card__head">
                             <h3 className="pricing-card__title text-[24px] leading-[40px]">Corporate</h3>
@@ -138,7 +125,7 @@ const Pricing = () => {
                             </Button>
                         </div>
                     </motion.div>
-                </div>
+                </motion.div>
             </div>
         </motion.section>
     );
