@@ -317,3 +317,7 @@ a {
 button:focus {
   outline: 1px solid red;
 }
+
+.ReactCollapse--collapse {
+  transition: height 300ms;
+}

@@ -4,8 +4,7 @@ import { FaMinus, FaPlus } from "react-icons/fa6";
 const Accordion = ({ open, toggle, data }) => {
     const { title, description } = data;
     return (
-        <div className='rounded-3xl overflow-hidden p-[1px]'>
-
+        <div className='rounded-3xl overflow-hidden p-[1px] '>
             <div className='rounded-3xl p-6 relative w-full h-full'>
                 <div className='accordion-bg absolute inset-0 blur-[100px]'></div>
                 <img className={`absolute right-0 top-0 opacity-${open ? '100' : '0'} transition-opacity duration-200 ease-in-out`} src="/assets/image/accordion-layer-1.svg" alt="" />
