@@ -1,6 +1,6 @@
 'use client'
 import Accordion from '@/components/utilities/Accordion'
-import { motion } from 'framer-motion'
+import { easeInOut, motion } from 'framer-motion'
 import React, { useState } from 'react'
 
 const data = [
@@ -42,13 +42,19 @@ const FAQ = () => {
                 <div className="">
                     <motion.h2
                         initial={{
-                            y: 100, opacity: 0
+                            opacity: 0
                         }}
                         whileInView={{
-                            y: 0, opacity: 1
+                            opacity: 1
                         }}
                         viewport={{
                             once: true
+                        }}
+                        transition={{
+                            easings: easeInOut,
+                            duration: 1,
+                            mass: 1.2,
+                            damping: 60,
                         }}
                         className='lg:text-[80px] sm:text-[60px] text-4xl lg:leading-[85px] leading-tight text-center font-medium tracking-[-.07em] pb-1 diamond-gradient'>
                         Frequently asked questions

@@ -23,10 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="bg-[#090a0c]">
       <body className={`${inter.className} ${manrope.variable} relative overflow-x-hidden`}>
         <Header/>
-        <div>
-                <img src="/assets/image/lights.svg" alt="" className="absolute top-0 left-1/2 -translate-x-1/2" />
-                <img src="/assets/image/bg-shadows.svg" alt="" className="absolute top-[-500px] left-[-400px]" />
-            </div>
+        
         {children}
         <Footer />
       </body>

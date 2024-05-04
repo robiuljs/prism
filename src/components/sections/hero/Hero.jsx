@@ -1,6 +1,6 @@
 'use client'
 import Button from "@/components/utilities/Button";
-import { useInView, motion } from "framer-motion";
+import { useInView, motion, easeInOut } from "framer-motion";
 import { useRef } from "react";
 
 const Hero = () => {
@@ -8,59 +8,68 @@ const Hero = () => {
     const isInView = useInView(ref, { once: true, margin: "0px 100px -200px 0px" })
     return (
         <section
-            className="flex flex-col justify-center sm:pb-[100px] pb-[60px] relative"
+            className="flex flex-col justify-center relative bg-[#070809]"
         >
+            <img src="/assets/image/lights.svg" alt="" className="absolute top-0 left-1/2 -translate-x-1/2 z-10 " />
+            <img src="/assets/image/bg-shadows.svg" alt="" className="absolute top-[-500px] left-[-400px] z-10 " />
             <div className="container z-10 flex flex-col justify-center md:gap-y-[145px] gap-y-[80px]">
-                <div className="flex flex-col justify-center items-center gap-y-8 text-center max-w-4xl mx-auto  relative  sm:pt-[155px] pt-[100px]">
-                    <img src="/assets/image/grid.svg" alt="" className="absolute top-0 left-1/2 -translate-x-1/2" />
-                    <img src="/assets/image/Star.svg" alt="" className="absolute top-0 left-1/2 -translate-x-1/2" />
-                    <div className="flex flex-col justify-center items-center sm:gap-y-8 gap-y-4">
+                <div className="flex flex-col justify-center items-center gap-y-8 text-center max-w-4xl mx-auto  relative  sm:pt-[155px] pt-[100px] ">
+                    <img src="/assets/image/grid.svg" alt="" className="absolute top-0 left-1/2 -translate-x-1/2 " />
+                    <img src="/assets/image/Star.svg" alt="" className="absolute top-0 left-1/2 -translate-x-1/2 " />
+                    <div className="flex flex-col justify-center items-center sm:gap-y-8 gap-y-4 relative z-50">
                         <div className="subtitle flex items-center gap-3">
                             <motion.img
                                 initial={{
-                                    x: -50,
+
                                     opacity: 0
                                 }}
                                 animate={{
-                                    x: 0,
                                     opacity: 100
                                 }}
                                 src="/assets/image/icons/line-1.svg" alt="" className="sm:w-auto w-[100px]" />
                             <motion.p
                                 initial={{
-                                    y: 50,
+
                                     opacity: 0
                                 }}
                                 animate={{
-                                    y: 0,
+
                                     opacity: 100,
                                 }}
                                 transition={{
-                                    delay: .3
+                                    easings: easeInOut,
+                                    duration: 1,
+                                    delay: .3,
+                                    mass: 1.2,
+                                    damping: 60
                                 }}
                                 className="badge-gradient"
 
                             >Top Banking Platform</motion.p>
                             <motion.img
                                 initial={{
-                                    x: 50,
+
                                     opacity: 0
                                 }}
                                 animate={{
-                                    x: 0,
+
                                     opacity: 100
                                 }}
                                 src="/assets/image/icons/line-2.svg" alt="" className="sm:w-auto w-[100px]" />
                         </div>
                         <motion.h1
                             initial={{
-                                y: 100, opacity: 0
+                                opacity: 0
                             }}
                             animate={{
-                                y: 0, opacity: 1
+                                opacity: 1
                             }}
                             transition={{
-                                delay: .6
+                                easings: easeInOut,
+                                duration: 1,
+                                delay: .6,
+                                mass: 1.2,
+                                damping: 60
                             }}
                             className="lg:text-[74px] sm:text-[60px] text-4xl lg:leading-[79px] leading-tight font-medium tracking-[-.07em] pb-1 diamond-gradient"
                         >
@@ -68,10 +77,10 @@ const Hero = () => {
                         </motion.h1>
                         <motion.p
                             initial={{
-                                y: 100, opacity: 0
+                                opacity: 0
                             }}
                             animate={{
-                                y: 0, opacity: 1
+                                opacity: 1
                             }}
                             transition={{
                                 delay: .8
@@ -84,14 +93,15 @@ const Hero = () => {
                     </div>
                     <motion.div
                         initial={{
-                            y: 100, opacity: 0
+                            opacity: 0
                         }}
                         animate={{
-                            y: 0, opacity: 1
+                            opacity: 1
                         }}
                         transition={{
                             delay: 1
                         }}
+                        className="relative z-50"
                     >
                         <Button>
                             Get Started
@@ -99,7 +109,7 @@ const Hero = () => {
                         </Button>
                     </motion.div>
                 </div>
-                <div className="flex justify-center relative">
+                <div className="flex justify-center relative mb-[-200px]">
                     <motion.img
                         style={{
                             transform: isInView ? 'rotate(-15deg)' : 'rotate(0deg)',
@@ -110,8 +120,7 @@ const Hero = () => {
                     />
                     <img src="/assets/image/card.webp" alt="" className="md:max-w-[479px] max-w-[200px] w-full" />
                 </div>
-                <div className="hero-overlay sm:h-[365px] h-[170px] rounded-lg absolute">
-                </div>
+
             </div>
         </section>
     );

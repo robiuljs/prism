@@ -6,9 +6,7 @@ import {
     motion,
     useSpring,
     useTransform,
-    PanInfo,
-    MotionValue,
-    useMotionValue
+    easeInOut
 } from "framer-motion";
 import { useRafLoop } from "react-use";
 import { useWindowSize } from "@react-hook/window-size";
@@ -139,13 +137,19 @@ const Testimonial = (props) => {
                 <div className="">
                     <motion.h2
                         initial={{
-                            y: 100, opacity: 0
+                            opacity: 0
                         }}
                         whileInView={{
-                            y: 0, opacity: 1
+                           opacity: 1
                         }}
                         viewport={{
                             once: true
+                        }}
+                        transition={{
+                            easings: easeInOut,
+                            duration: 1,
+                            mass: 1.2,
+                            damping: 60,
                         }}
                         className='lg:text-[80px] sm:text-[60px] text-4xl lg:leading-[85px] leading-tight text-center font-medium tracking-[-.07em] pb-1 diamond-gradient'>
                         What others say about us

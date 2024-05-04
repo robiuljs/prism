@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import Hamburger from 'hamburger-react';
@@ -6,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Button from '../utilities/Button';
+import { motion } from 'framer-motion';
 
 const Header = () => {
     const [isOpen, setOpen] = useState(false);
@@ -43,7 +43,9 @@ const Header = () => {
     }, []);
 
     return (
-        <header className='bg-transparent absolute top-0 w-full  z-[9999]'>
+        <motion.header
+        
+        className='bg-transparent absolute top-0 w-full  z-[9999]'>
             <div className="container relative md:py-5 py-3">
                 <div className='flex justify-between items-center'>
                     <div className="w-1/5 relative z-[1001]">
@@ -107,7 +109,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </header>
+        </motion.header>
     );
 };
 

@@ -1,5 +1,5 @@
 'use client'
-import { motion, useInView } from "framer-motion";
+import { easeInOut, motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const Features = () => {
@@ -11,18 +11,25 @@ const Features = () => {
             viewport={{
                 root: true
             }}
-            className="innovation-section relative z-20">
+            className="innovation-section relative z-20 pt-[280px]">
             <div className="container flex flex-col justify-center md:gap-y-[76px] sm:gap-y-12 gap-y-8">
                 <div className="">
                     <motion.h2
                         initial={{
-                            y: 100, opacity: 0
+                            opacity: 0
                         }}
                         whileInView={{
-                            y: 0, opacity: 1
+                            opacity: 1,
                         }}
                         viewport={{
-                            once: true
+                            once: true,
+                           
+                        }}
+                        transition={{
+                            easings: easeInOut,
+                            duration: 1,
+                            mass: 1.2,
+                            damping: 60,
                         }}
                         className='lg:text-[80px] sm:text-[60px] text-4xl lg:leading-[85px] leading-tight text-center font-medium tracking-[-.07em] pb-1 diamond-gradient'>
                         Fueling <br />Innovation Growth
@@ -33,15 +40,19 @@ const Features = () => {
                     {/* --- CARD ONE --- */}
                     <motion.div
                         initial={{
-                            y: 100, opacity: 0
+                            opacity: 0
                         }}
                         whileInView={{
-                            y: 0, opacity: 1
+                            opacity: 1
                         }}
                         viewport={{
                             once: true
                         }}
                         transition={{
+                            easings: easeInOut,
+                            duration: 1,
+                            mass: 1.2,
+                            damping: 60,
                             delay: .2
                         }}
                         className="w-full flex sm:flex-row flex-col-reverse gap-5 items-center justify-between bg-gradient-to-t from-white/5 to-black/90 rounded-[40px] lg:py-[50px] lg:px-[65px] py-6 px-6">
@@ -53,15 +64,19 @@ const Features = () => {
                     {/* --- CARD TWO --- */}
                     <motion.div
                         initial={{
-                            y: 100, opacity: 0
+                            opacity: 0
                         }}
                         whileInView={{
-                            y: 0, opacity: 1
+                            opacity: 1
                         }}
                         viewport={{
                             once: true
                         }}
                         transition={{
+                            easings: easeInOut,
+                            duration: 1,
+                            mass: 1.2,
+                            damping: 60,
                             delay: .3
                         }}
                         className="w-full flex sm:flex-row flex-col-reverse gap-5 items-center justify-between bg-gradient-to-t from-white/5 to-black/90 rounded-[40px] lg:px-[65px] px-6 md:py-0 py-5">
@@ -72,15 +87,19 @@ const Features = () => {
                     </motion.div>
                     <motion.div className="feature-grid"
                         initial={{
-                            y: 100, opacity: 0
+                            opacity: 0
                         }}
                         whileInView={{
-                            y: 0, opacity: 1
+                            opacity: 1
                         }}
                         viewport={{
                             once: true
                         }}
                         transition={{
+                            easings: easeInOut,
+                            duration: 1,
+                            mass: 1.2,
+                            damping: 60,
                             delay: .2
                         }}
                     >
@@ -108,15 +127,19 @@ const Features = () => {
                         {/* --- CARD SIX --- */}
                         <motion.div
                             initial={{
-                                y: 100, opacity: 0
+                                opacity: 0
                             }}
                             whileInView={{
-                                y: 0, opacity: 1
+                                opacity: 1
                             }}
                             viewport={{
                                 once: true
                             }}
                             transition={{
+                                easings: easeInOut,
+                                duration: 1,
+                                mass: 1.2,
+                                damping: 60,
                                 delay: .2
                             }}
                             className="feature-grid-4 w-full flex sm:flex-row flex-col-reverse gap-5 items-center justify-between gap-y-10 bg-gradient-to-t from-white/5 to-black/90 rounded-[20px] py-[40px] px-[34px]">
@@ -143,16 +166,20 @@ const Features = () => {
                     {/* --- CARD EIGHT --- */}
                     <motion.div
                         initial={{
-                            y: 100, opacity: 0
+                            opacity: 0
                         }}
                         whileInView={{
-                            y: 0, opacity: 1
+                            opacity: 1
                         }}
                         viewport={{
                             once: true
                         }}
                         transition={{
-                            delay: .2
+                            easings: easeInOut,
+                            duration: 1,
+                            mass: 1.2,
+                            damping: 60,
+                            delay: .2,
                         }}
                         className="w-full flex sm:flex-row flex-col-reverse gap-5 items-center justify-between bg-gradient-to-t from-white/5 to-black/90 rounded-[40px] lg:px-[65px] px-6  md:py-0 py-5">
                         <h3 className="content-card__title md:text-[35px] text-2xl md:leading-[40px] leading-tight font-bold sm:max-w-[516px] sm:text-left text-center diamond-gradient">
