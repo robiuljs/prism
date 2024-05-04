@@ -4,7 +4,7 @@ const TestimonialCard = ({
   text
 }) => {
     return (
-      <div className="testimonial-card">
+      <div className="testimonial-card min-w-[348px]">
         <div className="testimonial-card__head">
           <ul className="rating-stars">
             <li>

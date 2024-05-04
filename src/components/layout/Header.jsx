@@ -43,10 +43,10 @@ const Header = () => {
     }, []);
 
     return (
-        <header className='bg-transparent absolute top-0 w-full py-5 z-[9999]'>
-            <div className="container relative">
+        <header className='bg-transparent absolute top-0 w-full  z-[9999]'>
+            <div className="container relative md:py-5 py-3">
                 <div className='flex justify-between items-center'>
-                    <div className="w-1/5">
+                    <div className="w-1/5 relative z-[1001]">
                         <Link href="/">
                             <Image
                                 src="/assets/image/logo.svg"
@@ -57,14 +57,14 @@ const Header = () => {
                         </Link>
                     </div>
                     <nav
-                        className={`navbar-nav left-0 transition-all duration-300 ease-in-out`}
+                        className={`navbar-nav left-0 transition-all duration-300 ease-in-out `}
                         style={{
-                            top: screenWidth < 768 ? isOpen ? '100px' : '100vh' : '0',
+                            top: screenWidth < 768 ? isOpen ? '0' : '100vh' : '0',
                             opacity: screenWidth < 768 ? isOpen ? 1 : 0 : 1,
                             visibility: screenWidth < 768 ? isOpen ? 'visible' : 'hidden' : 'visible',
                             pointerEvents: screenWidth < 768 ? isOpen ? 'auto' : 'none' : 'auto',
                         }}>
-                        <ul className='flex md:items-center items-start md:gap-8 gap-4 max-w-[540px] md:max-w-max mx-auto md:flex-row flex-col md:px-0 px-3 md:py-0 py-8'>
+                        <ul className='flex md:items-center items-start md:gap-8 gap-4 max-w-[540px] md:max-w-max mx-auto md:flex-row flex-col md:px-0 px-3 md:pt-0 pt-20 pb-8'>
                             <li>
                                 <Link href="/">
                                     Home
@@ -82,7 +82,7 @@ const Header = () => {
                             </li>
                         </ul>
                     </nav>
-                    <div className="md:w-1/5 flex items-center gap-5">
+                    <div className="md:w-1/5 flex items-center gap-5 relative  z-[1001]">
                         <Link href="/">
                         Login
                         </Link>

@@ -1,5 +1,6 @@
 'use client'
 import Accordion from '@/components/utilities/Accordion'
+import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 
 const data = [
@@ -32,12 +33,26 @@ const FAQ = () => {
     };
 
     return (
-        <section className="innovation-section md:py-[100px] py-[60px] relative z-20">
+        <motion.section
+            viewport={{
+                root: true
+            }}
+            className="innovation-section md:py-[100px] py-[60px] relative z-20">
             <div className="container flex flex-col justify-center md:gap-y-[76px] sm:gap-y-12 gap-y-8">
                 <div className="">
-                <h2 className='lg:text-[80px] sm:text-[60px] text-4xl lg:leading-[85px] leading-tight text-center font-medium tracking-[-.07em] pb-1 diamond-gradient'>
+                    <motion.h2
+                        initial={{
+                            y: 100, opacity: 0
+                        }}
+                        whileInView={{
+                            y: 0, opacity: 1
+                        }}
+                        viewport={{
+                            once: true
+                        }}
+                        className='lg:text-[80px] sm:text-[60px] text-4xl lg:leading-[85px] leading-tight text-center font-medium tracking-[-.07em] pb-1 diamond-gradient'>
                         Frequently asked questions
-                    </h2>
+                    </motion.h2>
                 </div>
                 <div className="max-w-[1264px] mx-auto w-full flex flex-col gap-4">
                     {data?.map((data, index) => {
@@ -54,7 +69,7 @@ const FAQ = () => {
                     })}
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 
