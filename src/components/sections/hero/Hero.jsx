@@ -15,23 +15,24 @@ const Hero = () => {
             <img src="/assets/image/star.png" alt="" className="absolute top-0 left-1/2 -translate-x-1/2 " />
             <div className="container z-10 flex flex-col justify-center md:gap-y-[145px] gap-y-[80px]">
                 <motion.div
-                    initial={{
-                        y: 20, opacity: 0
-                    }}
-                    animate={{
-                        y: 0,
-                        opacity: 100,
-                    }}
-                    transition={{
-                        easings: easeInOut,
-                        duration: .3,
-                        delay: .3,
-                        mass: 1.2,
-                        damping: 60
-                    }}
                     className="flex flex-col justify-center items-center gap-y-8 text-center max-w-4xl mx-auto  relative  sm:pt-[155px] pt-[100px] ">
                     <img src="/assets/image/grid.svg" alt="" className="absolute top-0 left-1/2 -translate-x-1/2 " />
-                    <div className="flex flex-col justify-center items-center sm:gap-y-8 gap-y-4 relative z-50">
+                    <motion.div
+                        initial={{
+                            y: 20, opacity: 0
+                        }}
+                        animate={{
+                            y: 0,
+                            opacity: 100,
+                        }}
+                        transition={{
+                            easings: easeInOut,
+                            duration: .3,
+                            delay: .3,
+                            mass: 1.2,
+                            damping: 60
+                        }}
+                        className="flex flex-col justify-center items-center sm:gap-y-8 gap-y-4 relative z-50">
                         <div className="subtitle flex items-center gap-3">
                             <motion.img
                                 src="/assets/image/icons/line-1.svg" alt="" className="sm:w-auto w-[100px]" />
@@ -56,9 +57,22 @@ const Hero = () => {
                             Mi auctor sagittis habitasse elit. In orci lorem sodales sem enim
                             fusce At sem amet lacus eu aliquet venenatis tell bibendum sapien.
                         </motion.p>
-                    </div>
+                    </motion.div>
                     <motion.div
-
+                        initial={{
+                            y: 20, opacity: 0
+                        }}
+                        animate={{
+                            y: 0,
+                            opacity: 100,
+                        }}
+                        transition={{
+                            easings: easeInOut,
+                            duration: .3,
+                            delay: .3,
+                            mass: 1.2,
+                            damping: 60
+                        }}
                         className="relative z-50"
                     >
                         <Button>
