@@ -11,7 +11,9 @@ const Features = () => {
             viewport={{
                 root: true
             }}
-            className="innovation-section relative z-20 pt-[280px]">
+            className="innovation-section relative z-20 pt-[280px]"
+            id="features"
+            >
             <div className="container flex flex-col justify-center md:gap-y-[76px] sm:gap-y-12 gap-y-8">
                 <div className="">
                     <motion.h2

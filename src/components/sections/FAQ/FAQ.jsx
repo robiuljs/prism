@@ -37,7 +37,9 @@ const FAQ = () => {
             viewport={{
                 root: true
             }}
-            className="innovation-section md:py-[100px] py-[60px] relative z-20">
+            className="innovation-section md:py-[100px] py-[60px] relative z-20"
+            id='faq'
+        >
             <div className="container flex flex-col justify-center md:gap-y-[76px] sm:gap-y-12 gap-y-8">
                 <div className="">
                     <motion.h2

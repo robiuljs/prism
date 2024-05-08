@@ -132,7 +132,7 @@ const Testimonial = (props) => {
     ]
 
     return (
-        <motion.section className="testimonial-section overflow-x-hidden">
+        <motion.section className="testimonial-section overflow-x-hidden" id="testimonial">
             <div className="container  flex flex-col items-center justify-center md:gap-y-[76px] sm:gap-y-12 gap-y-8">
                 <div className="">
                     <motion.h2
@@ -140,7 +140,7 @@ const Testimonial = (props) => {
                             opacity: 0
                         }}
                         whileInView={{
-                           opacity: 1
+                            opacity: 1
                         }}
                         viewport={{
                             once: true

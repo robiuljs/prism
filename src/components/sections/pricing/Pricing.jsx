@@ -9,7 +9,9 @@ const Pricing = () => {
             viewport={{
                 root: true
             }}
-            className="pricing-section">
+            className="pricing-section"
+            id="pricing"
+            >
             <div className="container flex flex-col justify-center md:gap-y-[76px] sm:gap-y-12 gap-y-8">
                 <div className="">
                     <motion.h2

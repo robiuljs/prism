@@ -68,29 +68,29 @@ const Header = () => {
                         }}>
                         <ul className='flex md:items-center items-start md:gap-16 gap-4 max-w-[540px] md:max-w-max mx-auto md:flex-row flex-col md:px-0 px-3 md:pt-0 pt-20 md:pb-0 pb-8'>
                             <li>
-                                <Link href="/">
+                                <Link href="#features" className='cursor-pointer'>
                                     Features
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/">
+                                <Link href="#pricing" className='cursor-pointer'>
                                     Pricing
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/">
+                                <Link href="#faq" className='cursor-pointer'>
                                     FAQ
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/">
+                                <Link href="#support" className='cursor-pointer'>
                                     Support
                                 </Link>
                             </li>
                         </ul>
                     </nav>
                     <div className="md:w-1/5 flex items-center gap-5 relative  z-[1001]">
-                        <Link href="/">
+                        <Link href="/" className='cursor-pointer'>
                             Login
                         </Link>
                         <Button

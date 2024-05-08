@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 
 const buttonVariants = cva(
-    "inline-flex items-center justify-center gap-x-4 whitespace-nowrap rounded-full font-bold",
+    "inline-flex items-center justify-center gap-x-4 whitespace-nowrap rounded-full font-bold cursor-pointer",
     {
         variants: {
             variant: {

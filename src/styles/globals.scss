@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 /* --- RESETS --- */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: white;
   background: #090A0C;
@@ -16,6 +22,10 @@ h5,
 h6,
 p {
   font-family: var(--font-inter), sans-serif;
+}
+
+a {
+  cursor: pointer;
 }
 
 a,
