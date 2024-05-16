@@ -75,7 +75,7 @@ const Hero = () => {
                         }}
                         className="relative z-50"
                     >
-                        <div className="flex flex-col gap-5">
+                        <div className="flex flex-col justify-stretch gap-5">
                             <Button>
                                 Get Started
                                 <img src="assets/image/icons/arrow-right.svg" alt="" />
