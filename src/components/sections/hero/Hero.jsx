@@ -75,10 +75,13 @@ const Hero = () => {
                         }}
                         className="relative z-50"
                     >
-                        <Button>
-                            Get Started
-                            <img src="assets/image/icons/arrow-right.svg" alt="" />
-                        </Button>
+                        <div className="flex flex-col gap-5">
+                            <Button>
+                                Get Started
+                                <img src="assets/image/icons/arrow-right.svg" alt="" />
+                            </Button>
+                            <div id="getWaitlistContainer" data-waitlist_id="15869" data-widget_type="WIDGET_2"></div>
+                        </div>
                     </motion.div>
                 </motion.div>
                 <motion.div
