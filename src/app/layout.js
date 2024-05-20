@@ -16,28 +16,9 @@ const jakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata = {
-  icons: [
-    {
-      rel: 'apple-touch-icon',
-      url: '/apple-touch-icon.png',
-    },
-    {
-      rel: 'icon',
-      type: 'image/png',
-      sizes: '32x32',
-      url: '/favicon-32x32.png',
-    },
-    {
-      rel: 'icon',
-      type: 'image/png',
-      sizes: '16x16',
-      url: '/favicon-16x16.png',
-    },
-    {
-      rel: 'icon',
-      url: '/favicon.ico',
-    },
-  ],
+  title: 'Prism',
+  description: 'Your online crypto wallet',
+  metadataBase: new URL("https://prism-omega.vercel.app/"),
 };
 
 export default function RootLayout({ children }) {
