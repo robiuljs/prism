@@ -30,7 +30,6 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} ${manrope.variable} relative overflow-x-hidden`}>
         <Header/>
         {children}
-        <Footer />
         <Script src="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.js" />
       </body>
 
