@@ -1,11 +1,11 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import Hamburger from 'hamburger-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Button from '../utilities/Button';
-import { motion } from 'framer-motion';
 
 const Header = () => {
     const [isOpen, setOpen] = useState(false);
@@ -73,7 +73,7 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#pricing" className='cursor-pointer'>
+                                <Link href="/pricing" className='cursor-pointer'>
                                     Pricing
                                 </Link>
                             </li>

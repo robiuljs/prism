@@ -1,9 +1,9 @@
 import PricingTwo from "@/components/sections/pricing/PricingTwo";
 
-export default function ContactUs() {
+export default function PricingPage() {
   return (
     <main>
-      <PricingTwo />
+      <PricingTwo/>
     </main>
   );
 }

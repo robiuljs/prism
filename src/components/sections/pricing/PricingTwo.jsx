@@ -12,8 +12,8 @@ const PricingTwo = () => {
     const metalHandler = () => {
         setPricingType("metal")
     }
-    const corporateHandler = () => {
-        setPricingType("corporate")
+    const virtualHandler = () => {
+        setPricingType("virtual")
     }
 
     return (
@@ -75,11 +75,11 @@ const PricingTwo = () => {
                                     <span className="opacity-[40%]">Anonymous</span>
                                 </li>
                             </ul>
-                            <Button className="w-full">
+                            <Button href="/contact" className="w-full">
                                 REGISTER
                             </Button>
                         </div>
-                    ) : pricingType === 'corporate' ? (
+                    ) : pricingType === 'virtual' ? (
                         <div className="w-full lg:w-[474px] flex flex-col items-center justify-between gap-[54px] bg-[#0e0f11] border border-1 border-[#E2E8FF10] p-[30px] sm:pt-[76px] rounded-[14.12px]">
                             <ul className="flex flex-col gap-[26px]">
                                 <li className="flex items-center gap-[44px] text-base font-medium text-white">
@@ -88,7 +88,7 @@ const PricingTwo = () => {
                                 </li>
                                 <li className="flex items-center gap-[44px] text-base font-medium text-white">
                                     <img className="w-[13px] h-[10px]" src="/assets/image/check-icon.svg" alt="" />
-                                    Unlimited spending limits
+                                    No spending limits
                                 </li>
                                 <li className="flex items-center gap-[44px] text-base font-medium text-white">
                                     <img className="w-[13px] h-[10px]" src="/assets/image/check-icon.svg" alt="" />
@@ -107,7 +107,7 @@ const PricingTwo = () => {
                                     Anonymous
                                 </li>
                             </ul>
-                            <Button className="w-full">
+                            <Button href="/contact"  className="w-full">
                                 REGISTER
                             </Button>
                         </div>
@@ -143,7 +143,7 @@ const PricingTwo = () => {
                                     <span className="opacity-[40%]">Anonymous</span>
                                 </li>
                             </ul>
-                            <Button className="w-full">
+                            <Button href="/contact"  className="w-full">
                                 REGISTER
                             </Button>
                         </div>
@@ -166,22 +166,22 @@ const PricingTwo = () => {
                             </div>
                             <h3 className={`text-[38px] font-medium ${pricingType === "metal" ? "opacity-[100%]" : "opacity-[60%]"}`}>$750</h3>
                         </div>
-                        <div onClick={corporateHandler} className={`w-full flex items-center justify-between border-[1px] rounded-[12px] p-[30px] md:py-[42px] lg:py-[52px] md:p-[56px] pl-[30px] cursor-pointer select-none ${pricingType === "corporate" ? "border-[#699CB9] bg-[#161a2180]" : "border-[#E2E8FF10]"}`}>
+                        <div onClick={virtualHandler} className={`w-full flex items-center justify-between border-[1px] rounded-[12px] p-[30px] md:py-[42px] lg:py-[52px] md:p-[56px] pl-[30px] cursor-pointer select-none ${pricingType === "virtual" ? "border-[#699CB9] bg-[#161a2180]" : "border-[#E2E8FF10]"}`}>
                             <div className="flex items-center gap-[18px]">
-                                <div className={`border-[2px] border-[#699CB9] w-5 h-5 rounded-full  ${pricingType === "corporate" ? "bg-white" : "bg-transparent"}`}>
+                                <div className={`border-[2px] border-[#699CB9] w-5 h-5 rounded-full  ${pricingType === "virtual" ? "bg-white" : "bg-transparent"}`}>
                                 </div>
-                                <p className={`text-[24px] font-medium ${pricingType === "corporate" ? "opacity-[100%]" : "opacity-[80%]"}`}>Corporate</p>
+                                <p className={`text-[24px] font-medium ${pricingType === "virtual" ? "opacity-[100%]" : "opacity-[80%]"}`}>Virtual</p>
                             </div>
-                            <h3 className={`text-[38px] font-medium ${pricingType === "corporate" ? "opacity-[100%]" : "opacity-[60%]"}`}>$3000</h3>
+                            <h3 className={`text-[38px] font-medium ${pricingType === "virtual" ? "opacity-[100%]" : "opacity-[60%]"}`}>$3000</h3>
                         </div>
                     </div>
                 </div>
                 <div className="max-w-[1196px] w-full mx-auto mt-[38px] bg-[#0e0f11] border border-1 border-[#E2E8FF10] px-[56px] pt-[48px] pb-[36px] rounded-[13.12px]">
                     <div className="flex items-center justify-between">
-                        <p className="text-[24px] font-medium">Virtual Card</p>
+                        <p className="text-[24px] font-medium">Corporate</p>
                         <h4 className="text-[38px] font-medium">Custom</h4>
                     </div>
-                    <ul className="w-full lg:w-1/2 list-disc grid grid-cols-2 gap-[30px] mt-[80px] mb-[60px]">
+                    <ul className="w-full lg:w-1/2 list-disc grid grid-cols-3 gap-[30px] mt-[80px] mb-[60px]">
                         <li className="col-span-2 sm:col-span-1 text-base font-medium text-white">
                             Instant Issuance
                         </li>
@@ -194,8 +194,14 @@ const PricingTwo = () => {
                         <li className="col-span-2 sm:col-span-1 text-base font-medium text-white">
                             24/7 live support
                         </li>
+                        <li className="col-span-2 sm:col-span-1 text-base font-medium text-white">
+                            No spending iimits
+                        </li>
+                        <li className="col-span-2 sm:col-span-1 text-base font-medium text-white">
+                            24/7 live support
+                        </li>
                     </ul>
-                    <Button className="w-full">
+                    <Button href="/contact"  className="w-full">
                         Contact Us
                     </Button>
                 </div>
