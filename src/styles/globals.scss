@@ -330,6 +330,7 @@ button:focus {
   transition: height 300ms;
 }
 
-.getWaitlistContainer input {
+#getWaitlistContainer input {
   height: 39px !important;
+  font-size: 14px !important;
 }
