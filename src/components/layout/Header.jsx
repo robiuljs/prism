@@ -73,7 +73,7 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/pricing" className='cursor-pointer'>
+                                <Link href="#pricing" className='cursor-pointer'>
                                     Pricing
                                 </Link>
                             </li>
